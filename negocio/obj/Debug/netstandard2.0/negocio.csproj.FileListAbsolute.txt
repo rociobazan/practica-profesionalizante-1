@@ -11,3 +11,4 @@ C:\Users\ASUS\Desktop\PP1\negocio\bin\Debug\netstandard2.0\dominio.pdb
 C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.csproj.Up2Date
 C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.dll
 C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.pdb
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.sourcelink.json

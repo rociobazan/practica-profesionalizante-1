@@ -134,20 +134,17 @@
                 </div>
 
                 <div class="input-group">
-                    <asp:Label ID="lblUsuario" runat="server" Text="Usuario" AssociatedControlID="txtUsuario"></asp:Label>
-                    <asp:TextBox ID="txtUsuario" runat="server" CssClass="login-input"></asp:TextBox>
+                    <asp:Label ID="lblEmail" runat="server" Text="Usuario" AssociatedControlID="txtEmail"></asp:Label>
+                    <asp:TextBox ID="txtEmail" runat="server" CssClass="login-input"></asp:TextBox>
                 </div>
 
                 <div class="input-group">
-                    <asp:Label ID="lblContrasena" runat="server" Text="Contraseña" AssociatedControlID="txtContrasena"></asp:Label>
-                    <asp:TextBox ID="txtContrasena" runat="server" TextMode="Password" CssClass="login-input"></asp:TextBox>
+                    <asp:Label ID="lblContraseina" runat="server" Text="Contraseña" AssociatedControlID="txtContrasenia"></asp:Label>
+                    <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" CssClass="login-input"></asp:TextBox>
                 </div>
 
-                <div class="checkbox-group">
-                    <asp:CheckBox ID="chkRecordar" runat="server" Text=" Recordar en este dispositivo" />
-                </div>
 
-                <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="login-button"/>
+                <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="login-button" OnClick="btnLogin_Click" />
                 
             </div>
         </div>

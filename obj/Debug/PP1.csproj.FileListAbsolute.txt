@@ -147,3 +147,5 @@ C:\Users\ASUS\Desktop\PP1\bin\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.csproj.Up2Date
 C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.dll
 C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.pdb
+C:\Users\ASUS\Desktop\PP1\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\ASUS\Desktop\PP1\bin\System.Configuration.ConfigurationManager.xml

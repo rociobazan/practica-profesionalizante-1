@@ -1,5 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
+using Microsoft.IdentityModel.Protocols;
 using System;
+using System.Configuration;
 
 namespace negocio
 {
@@ -12,7 +14,7 @@ namespace negocio
 
         public AccesoDatos() //establece la conexion con la db
         {
-            conexion = new SqlConnection("server=.\\.SQLEXPRESS; database=APP_FINANZAS; integrated security=true");
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MiConexionDB"].ToString(); conexion = new SqlConnection(connectionString);
             comando = new SqlCommand();
         }
 
