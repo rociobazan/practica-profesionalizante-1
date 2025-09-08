@@ -1,5 +1,3 @@
-C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.csproj.AssemblyReference.cache
-C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\PP1\bin\PP1.dll.config
 C:\Users\ASUS\Desktop\PP1\bin\PP1.dll
 C:\Users\ASUS\Desktop\PP1\bin\PP1.pdb
@@ -76,6 +74,7 @@ C:\Users\ASUS\Desktop\PP1\bin\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ASUS\Desktop\PP1\bin\negocio.dll
 C:\Users\ASUS\Desktop\PP1\bin\System.Buffers.dll
 C:\Users\ASUS\Desktop\PP1\bin\System.ClientModel.dll
+C:\Users\ASUS\Desktop\PP1\bin\System.Configuration.ConfigurationManager.dll
 C:\Users\ASUS\Desktop\PP1\bin\System.Data.SqlClient.dll
 C:\Users\ASUS\Desktop\PP1\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\ASUS\Desktop\PP1\bin\System.IdentityModel.Tokens.Jwt.dll
@@ -116,6 +115,7 @@ C:\Users\ASUS\Desktop\PP1\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xm
 C:\Users\ASUS\Desktop\PP1\bin\Microsoft.IdentityModel.Tokens.xml
 C:\Users\ASUS\Desktop\PP1\bin\System.Buffers.xml
 C:\Users\ASUS\Desktop\PP1\bin\System.ClientModel.xml
+C:\Users\ASUS\Desktop\PP1\bin\System.Configuration.ConfigurationManager.xml
 C:\Users\ASUS\Desktop\PP1\bin\System.Data.SqlClient.xml
 C:\Users\ASUS\Desktop\PP1\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\ASUS\Desktop\PP1\bin\System.IdentityModel.Tokens.Jwt.xml
@@ -144,8 +144,8 @@ C:\Users\ASUS\Desktop\PP1\bin\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\ASUS\Desktop\PP1\bin\tr\Microsoft.Data.SqlClient.resources.dll
 C:\Users\ASUS\Desktop\PP1\bin\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\ASUS\Desktop\PP1\bin\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.csproj.Up2Date
 C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.dll
 C:\Users\ASUS\Desktop\PP1\obj\Debug\PP1.pdb
-C:\Users\ASUS\Desktop\PP1\bin\System.Configuration.ConfigurationManager.dll
-C:\Users\ASUS\Desktop\PP1\bin\System.Configuration.ConfigurationManager.xml

@@ -121,6 +121,21 @@
         .login-button:hover {
             background-color: #c09440; /* Tono más oscuro al pasar el mouse */
         }
+
+        /* Estilos para el link de registro */
+        .register-link {
+            display: block; /* Asegura que ocupe su propia línea */
+            text-align: center; /* Centra el texto del link */
+            margin-top: 20px; /* ¡Esta es la línea clave! Añade espacio arriba */
+            color: #d4a753; /* Color dorado para que combine */
+            text-decoration: none; /* Quita el subrayado feo */
+            font-size: 0.9em;
+        }
+
+        .register-link:hover {
+            text-decoration: underline; /* Añade el subrayado solo al pasar el mouse */
+            color: #ffffff; /* Cambia a color blanco al pasar el mouse */
+        }
     </style>
 
 </head>
@@ -143,8 +158,11 @@
                     <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" CssClass="login-input"></asp:TextBox>
                 </div>
 
-
                 <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="login-button" OnClick="btnLogin_Click" />
+
+                <asp:HyperLink ID="hlRegistrarse" runat="server" NavigateUrl="~/Registro.aspx" CssClass="register-link">
+                    ¿No tienes una cuenta? Regístrate aquí
+                </asp:HyperLink>
                 
             </div>
         </div>

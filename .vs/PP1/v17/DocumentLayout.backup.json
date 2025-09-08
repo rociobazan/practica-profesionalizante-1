@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\PP1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|C:\\Users\\ASUS\\Desktop\\PP1\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|c:\\users\\asus\\desktop\\pp1\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60F7F828-1B73-4212-AB55-730DE2883221}|negocio\\negocio.csproj|c:\\users\\asus\\desktop\\pp1\\negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60F7F828-1B73-4212-AB55-730DE2883221}|negocio\\negocio.csproj|solutionrelative:negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60F7F828-1B73-4212-AB55-730DE2883221}|negocio\\negocio.csproj|c:\\users\\asus\\desktop\\pp1\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60F7F828-1B73-4212-AB55-730DE2883221}|negocio\\negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|c:\\users\\asus\\desktop\\pp1\\registro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:registro.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\negocio\\UsuarioNegocio.cs",
-              "RelativeDocumentMoniker": "negocio\\UsuarioNegocio.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\negocio\\UsuarioNegocio.cs",
-              "RelativeToolTip": "negocio\\UsuarioNegocio.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwEAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T01:49:01.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\negocio\\AccesoDatos.cs",
-              "RelativeDocumentMoniker": "negocio\\AccesoDatos.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\negocio\\AccesoDatos.cs",
-              "RelativeToolTip": "negocio\\AccesoDatos.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAawBAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T23:08:32.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.aspx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\Login.aspx",
-              "RelativeDocumentMoniker": "Login.aspx",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\Login.aspx",
-              "RelativeToolTip": "Login.aspx",
+              "DocumentIndex": 0,
+              "Title": "Registro.aspx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\Registro.aspx",
+              "RelativeDocumentMoniker": "Registro.aspx",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\Registro.aspx*",
+              "RelativeToolTip": "Registro.aspx*",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-07T23:05:06.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\Login.aspx.cs",
-              "RelativeDocumentMoniker": "Login.aspx.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\Login.aspx.cs",
-              "RelativeToolTip": "Login.aspx.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAswCEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T22:56:54.587Z",
+              "WhenOpened": "2025-09-08T15:07:27.357Z",
               "EditorCaption": ""
             }
           ]
