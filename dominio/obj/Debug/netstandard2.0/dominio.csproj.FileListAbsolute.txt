@@ -1,0 +1,10 @@
+C:\Users\ASUS\Desktop\PP1\dominio\bin\Debug\netstandard2.0\dominio.deps.json
+C:\Users\ASUS\Desktop\PP1\dominio\bin\Debug\netstandard2.0\dominio.dll
+C:\Users\ASUS\Desktop\PP1\dominio\bin\Debug\netstandard2.0\dominio.pdb
+C:\Users\ASUS\Desktop\PP1\dominio\obj\Debug\netstandard2.0\dominio.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\PP1\dominio\obj\Debug\netstandard2.0\dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\PP1\dominio\obj\Debug\netstandard2.0\dominio.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\PP1\dominio\obj\Debug\netstandard2.0\dominio.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\PP1\dominio\obj\Debug\netstandard2.0\dominio.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\PP1\dominio\obj\Debug\netstandard2.0\dominio.dll
+C:\Users\ASUS\Desktop\PP1\dominio\obj\Debug\netstandard2.0\dominio.pdb

@@ -1,0 +1,13 @@
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\PP1\negocio\bin\Debug\netstandard2.0\negocio.deps.json
+C:\Users\ASUS\Desktop\PP1\negocio\bin\Debug\netstandard2.0\negocio.dll
+C:\Users\ASUS\Desktop\PP1\negocio\bin\Debug\netstandard2.0\negocio.pdb
+C:\Users\ASUS\Desktop\PP1\negocio\bin\Debug\netstandard2.0\dominio.dll
+C:\Users\ASUS\Desktop\PP1\negocio\bin\Debug\netstandard2.0\dominio.pdb
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.csproj.Up2Date
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.dll
+C:\Users\ASUS\Desktop\PP1\negocio\obj\Debug\netstandard2.0\negocio.pdb
