@@ -85,6 +85,10 @@
             </asp:UpdatePanel>
 
             <%-- El resto del formulario va fuera del UpdatePanel --%>
+             <div class="input-group">
+                <asp:Label ID="lblNombre" runat="server" Text="Nombre del Movimiento"></asp:Label>
+                <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control-custom" placeholder="Ej: Sueldo, Compra Supermercado"></asp:TextBox>
+            </div>
             <div class="input-group">
                 <asp:Label ID="lblMonto" runat="server" Text="Monto"></asp:Label>
                 <asp:TextBox ID="txtMonto" runat="server" CssClass="form-control-custom" TextMode="Number" step="0.01" placeholder="0.00"></asp:TextBox>

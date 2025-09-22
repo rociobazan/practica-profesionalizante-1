@@ -1,5 +1,6 @@
-﻿using System;
-using dominio;
+﻿using dominio;
+using Microsoft.Data.SqlClient;
+using System;
 
 namespace negocio
 {
@@ -38,25 +39,53 @@ namespace negocio
 
         public void InsertarNuevo(Usuario nuevo)
         {
-            AccesoDatos datos = new AccesoDatos();
-            try
-            {
-                datos.setearConsulta("INSERT INTO USUARIOS (Email, Pass, Nombre, Apellido, [User]) VALUES (@email, @pass, @nombre, @apellido, @user)");
-                datos.setearParametro("@email", nuevo.Email);
-                datos.setearParametro("@pass", nuevo.Pass); // ADVERTENCIA: Se guarda la contraseña en texto plano
-                datos.setearParametro("@nombre", nuevo.Nombre);
-                datos.setearParametro("@apellido", nuevo.Apellido);
-                datos.setearParametro("@user", nuevo.User);
+            // Obtenemos la cadena de conexión para manejar la transacción manualmente
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MiConexionDB"].ToString();
 
-                datos.ejecutarAccion();
-            }
-            catch (Exception ex)
+            // Usamos 'using' para asegurar que la conexión se cierre siempre
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
+                connection.Open();
+                // Iniciamos la transacción
+                SqlTransaction transaction = connection.BeginTransaction();
+
+                try
+                {
+                    // --- PASO 1: INSERTAR EL NUEVO USUARIO Y OBTENER SU ID ---
+                    // Usamos 'SCOPE_IDENTITY()' para que la consulta nos devuelva el ID del usuario recién creado.
+                    string queryUsuario = "INSERT INTO USUARIOS (Email, Pass, Nombre, Apellido, [User]) OUTPUT INSERTED.IdUsuario VALUES (@email, @pass, @nombre, @apellido, @user)";
+                    int nuevoIdUsuario;
+
+                    using (SqlCommand cmd = new SqlCommand(queryUsuario, connection, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@email", nuevo.Email);
+                        cmd.Parameters.AddWithValue("@pass", nuevo.Pass); // Recuerda que aquí guardas en texto plano
+                        cmd.Parameters.AddWithValue("@nombre", nuevo.Nombre);
+                        cmd.Parameters.AddWithValue("@apellido", nuevo.Apellido);
+                        cmd.Parameters.AddWithValue("@user", nuevo.User);
+
+                        // Ejecutamos la consulta y guardamos el ID que nos devuelve
+                        nuevoIdUsuario = (int)cmd.ExecuteScalar();
+                    }
+
+                    // --- PASO 2: CREAR LA BILLETERA ASOCIADA A ESE NUEVO ID ---
+                    string queryBilletera = "INSERT INTO BILLETERAS (IdUsuario, Nombre, SaldoActual) VALUES (@idUsuario, @nombre, 0.00)";
+                    using (SqlCommand cmd = new SqlCommand(queryBilletera, connection, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@idUsuario", nuevoIdUsuario);
+                        cmd.Parameters.AddWithValue("@nombre", "Billetera Principal"); // Le damos un nombre por defecto
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // Si ambos comandos se ejecutaron sin errores, confirmamos la transacción
+                    transaction.Commit();
+                }
+                catch (Exception)
+                {
+                    // Si algo falló, revertimos todos los cambios para no dejar datos corruptos
+                    transaction.Rollback();
+                    throw; // Relanzamos la excepción para que la página muestre un error
+                }
             }
         }
     }

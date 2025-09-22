@@ -72,7 +72,7 @@ namespace PP1
                 List<Categoria> listaCategorias = negocio.Listar(tipo, user.IdUsuario);
 
                 ddlCategorias.DataSource = listaCategorias;
-                ddlCategorias.DataValueField = "Id";
+                ddlCategorias.DataValueField = "IdCategoria";
                 ddlCategorias.DataTextField = "Nombre";
                 ddlCategorias.DataBind();
 
@@ -97,7 +97,7 @@ namespace PP1
                 List<Objetivo> listaObjetivos = negocio.Listar(user.IdUsuario);
 
                 ddlObjetivos.DataSource = listaObjetivos;
-                ddlObjetivos.DataValueField = "Id";
+                ddlObjetivos.DataValueField = "IdObjetivo";
                 ddlObjetivos.DataTextField = "Nombre";
                 ddlObjetivos.DataBind();
                 ddlObjetivos.Items.Insert(0, new ListItem("Seleccione un Objetivo", "0"));
@@ -111,12 +111,77 @@ namespace PP1
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            // La lógica para guardar el movimiento en la base de datos irá aquí.
-            // Esto implicará crear un MovimientoNegocio.cs que maneje la transacción
-            // de insertar el movimiento, actualizar la billetera y, opcionalmente, el objetivo.
+            try
+            {
+                // 1. VALIDACIONES
+                if (string.IsNullOrEmpty(txtMonto.Text) || decimal.Parse(txtMonto.Text) <= 0)
+                {
+                    lblMensaje.Text = "Por favor, ingrese un monto válido y mayor a cero.";
+                    lblMensaje.ForeColor = System.Drawing.Color.Red;
+                    return;
+                }
 
-            lblMensaje.Text = "¡Movimiento guardado con éxito! (Lógica de guardado pendiente)";
-            lblMensaje.ForeColor = System.Drawing.Color.Green;
+                if (ddlCategorias.SelectedValue == "0")
+                {
+                    lblMensaje.Text = "Por favor, seleccione una categoría.";
+                    lblMensaje.ForeColor = System.Drawing.Color.Red;
+                    return;
+                }
+
+                // 2. OBTENER DATOS DEL USUARIO Y BILLETERA
+                Usuario user = (Usuario)Session["usuarioLogueado"];
+                BilleteraNegocio billeteraNegocio = new BilleteraNegocio();
+                int idBilletera = billeteraNegocio.ObtenerIdBilleteraPorUsuario(user.IdUsuario);
+
+                if (idBilletera == 0)
+                {
+                    lblMensaje.Text = "Error: No se encontró una billetera para este usuario.";
+                    lblMensaje.ForeColor = System.Drawing.Color.Red;
+                    return;
+                }
+
+                // 3. CREAR EL OBJETO MOVIMIENTO
+                Movimiento nuevoMovimiento = new Movimiento();
+                nuevoMovimiento.Nombre = txtNombre.Text; // <-- AÑADIMOS ESTA LÍNEA
+                nuevoMovimiento.IdBilletera = idBilletera;
+                nuevoMovimiento.TipoMovimiento = rblTipoMovimiento.SelectedValue;
+                nuevoMovimiento.IdCategoria = int.Parse(ddlCategorias.SelectedValue);
+                nuevoMovimiento.Monto = decimal.Parse(txtMonto.Text);
+                nuevoMovimiento.Descripcion = txtDescripcion.Text;
+                nuevoMovimiento.Fecha = DateTime.Parse(txtFecha.Text);
+
+                // Si el panel de objetivos es visible y se seleccionó uno, lo asignamos
+                if (pnlObjetivos.Visible && ddlObjetivos.SelectedValue != "0")
+                {
+                    nuevoMovimiento.IdObjetivo = int.Parse(ddlObjetivos.SelectedValue);
+                }
+
+                // 4. MANEJAR LA SUBIDA DE IMAGEN (OPCIONAL)
+                if (fuImagen.HasFile)
+                {
+                    // Creamos una ruta segura para guardar la imagen
+                    string ruta = Server.MapPath("./Imagenes/Movimientos/");
+                    string nombreArchivo = "mov-" + user.IdUsuario + "-" + Guid.NewGuid().ToString() + ".jpg";
+                    fuImagen.SaveAs(ruta + nombreArchivo);
+                    nuevoMovimiento.UrlImagen = nombreArchivo;
+                }
+
+                // 5. LLAMAR A LA LÓGICA DE NEGOCIO PARA GUARDAR
+                MovimientoNegocio movimientoNegocio = new MovimientoNegocio();
+                movimientoNegocio.Agregar(nuevoMovimiento);
+
+                // 6. MOSTRAR MENSAJE DE ÉXITO
+                lblMensaje.Text = "¡Movimiento guardado con éxito!";
+                lblMensaje.ForeColor = System.Drawing.Color.Green;
+
+                // Opcional: Redirigir a otra página
+                // Response.Redirect("Resumen.aspx", false);
+            }
+            catch (Exception ex)
+            {
+                lblMensaje.Text = "Error al guardar el movimiento: " + ex.Message;
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+            }
         }
     }
 }

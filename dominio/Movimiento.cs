@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace dominio
 {
-    internal class Movimiento
+    public class Movimiento
     {
+        public string Nombre { get; set; }
         public int IdMovimiento { get; set; }
         public decimal Monto { get; set; }
-        public string TipoMovimiento { get; set; } // "Ingreso" o "Egreso"
+        public string TipoMovimiento { get; set; }
         public string Descripcion { get; set; }
         public DateTime Fecha { get; set; }
-        public string UrlImagen { get; set; } // Opcional, para comprobantes
+        public string UrlImagen { get; set; }
 
-        // Relaciones importantes
+        // --- RELACIONES CORREGIDAS ---
+        // Ahora usamos los IDs directamente, que es lo que el resto del código necesita.
         public int IdBilletera { get; set; }
-        public Categoria Categoria { get; set; } // Objeto Categoria anidado
-        public Objetivo Objetivo { get; set; }   // Objeto Objetivo anidado (puede ser null)
+        public int IdCategoria { get; set; }
+        public int? IdObjetivo { get; set; } // int? permite que el valor sea nulo (null)
     }
 }
