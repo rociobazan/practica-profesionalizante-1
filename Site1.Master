@@ -1,20 +1,43 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="PP1.Site1" %>
 
 <!DOCTYPE html>
-
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Mi App de Finanzas</title>
+    
+    <%-- ESTE ES EL ESTILO CENTRALIZADO PARA EL FONDO --%>
+    <style type="text/css">
+        body {
+            /* Ruta a la imagen desde la raíz del proyecto. Asegúrate de que tu imagen esté en una carpeta 'Images' */
+            background-image: url('/Images/Login.png'); 
+            
+            background-size: cover; /* Cubre todo el espacio disponible */
+            background-position: center center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+            
+            font-family: Arial, Helvetica, sans-serif; /* Define una fuente base para todo el sitio */
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <%-- Aquí se insertarán los estilos específicos de cada página (como los de NuevoMovimiento.aspx) --%>
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body> <%-- Solo hay UNA etiqueta body --%>
     <form id="form1" runat="server">
+        
+        <%-- Aquí puedes poner elementos comunes como una barra de navegación en el futuro --%>
+        
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <%-- El contenido de tus páginas (.aspx) se renderizará aquí --%>
             </asp:ContentPlaceHolder>
         </div>
+
     </form>
 </body>
 </html>

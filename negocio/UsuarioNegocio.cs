@@ -3,64 +3,52 @@ using dominio;
 
 namespace negocio
 {
-    public  class UsuarioNegocio
+    public class UsuarioNegocio
     {
-
-        public int InsertarNuevo(Usuario nuevo)
+        public bool Loguear(Usuario usuario)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("insert into USERS(email, pass) output inserted.Id values(@email, @pass)");
-                datos.setearParametro("@email", nuevo.Email);
-                datos.setearParametro("@pass", nuevo.Pass);
+                datos.setearConsulta("SELECT IdUsuario, Nombre, Apellido, [User], Email FROM USUARIOS WHERE Email = @email AND Pass = @pass");
+                datos.setearParametro("@email", usuario.Email);
+                datos.setearParametro("@pass", usuario.Pass);
+                datos.ejecutarLectura();
 
-
-
-                
-                return datos.ejecutarAccionScalar();
-
+                if (datos.Lector.Read())
+                {
+                    usuario.IdUsuario = (int)datos.Lector["IdUsuario"];
+                    usuario.Nombre = datos.Lector["Nombre"] is DBNull ? "" : (string)datos.Lector["Nombre"];
+                    usuario.Apellido = datos.Lector["Apellido"] is DBNull ? "" : (string)datos.Lector["Apellido"];
+                    usuario.User = datos.Lector["User"] is DBNull ? "" : (string)datos.Lector["User"];
+                    usuario.Email = (string)datos.Lector["Email"];
+                    return true;
+                }
+                return false;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw ex;
             }
             finally
             {
                 datos.cerrarConexion();
             }
         }
-        public bool Loguear(Usuario usuario)
+
+        public void InsertarNuevo(Usuario nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                // CORRECCIÓN: Usamos 'email' y 'pass' que son más estándar y coinciden con tu referencia.
-                datos.setearConsulta("Select IdUsuario, Email, Nombre, Apellido from USUARIOS where Email = @email AND Pass = @pass");
+                datos.setearConsulta("INSERT INTO USUARIOS (Email, Pass, Nombre, Apellido, [User]) VALUES (@email, @pass, @nombre, @apellido, @user)");
+                datos.setearParametro("@email", nuevo.Email);
+                datos.setearParametro("@pass", nuevo.Pass); // ADVERTENCIA: Se guarda la contraseña en texto plano
+                datos.setearParametro("@nombre", nuevo.Nombre);
+                datos.setearParametro("@apellido", nuevo.Apellido);
+                datos.setearParametro("@user", nuevo.User);
 
-                // CORRECIÓN: Pasamos la propiedad Email del objeto, no 'User'.
-                datos.setearParametro("@email", usuario.Email);
-                datos.setearParametro("@pass", usuario.Pass);
-                datos.ejecutarLectura();
-
-                // CORRECCIÓN: Usamos 'if' en lugar de 'while'. Un login solo debe encontrar un usuario.
-                if (datos.Lector.Read())
-                {
-                    usuario.IdUsuario = (int)datos.Lector["IdUsuario"];
-                    // Asignamos los demás datos al objeto para tenerlos disponibles en la sesión
-                    if (!(datos.Lector["Nombre"] is DBNull))
-                        usuario.Nombre = (string)datos.Lector["Nombre"];
-                    if (!(datos.Lector["Apellido"] is DBNull))
-                        usuario.Apellido = (string)datos.Lector["Apellido"];
-
-                    // ¡Importante! Asignamos el email que vino de la DB.
-                    usuario.Email = (string)datos.Lector["Email"];
-
-                    return true;
-                }
-
-                return false;
+                datos.ejecutarAccion();
             }
             catch (Exception ex)
             {

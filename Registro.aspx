@@ -174,7 +174,11 @@
     
                 </div>
 
-                <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" CssClass="register-button" />
+                <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" CssClass="register-button" OnClick="btnRegistrar_Click" />
+
+                <%-- Asegúrate de tener esta Label para los mensajes --%>
+                <asp:Label ID="lblMensaje" runat="server" CssClass="login-link" EnableViewState="false"></asp:Label>
+            
                 
                 <asp:HyperLink ID="hlLogin" runat="server" NavigateUrl="~/Login.aspx" CssClass="login-link">
                     ¿Ya tienes una cuenta? Inicia Sesión
