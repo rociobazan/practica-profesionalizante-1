@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\PP1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|C:\\Users\\ASUS\\Desktop\\PP1\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|c:\\users\\asus\\desktop\\pp1\\movimientos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:movimientos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|C:\\Users\\ASUS\\Desktop\\PP1\\movimientos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:movimientos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|c:\\users\\asus\\desktop\\pp1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|c:\\users\\asus\\desktop\\pp1\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60F7F828-1B73-4212-AB55-730DE2883221}|negocio\\negocio.csproj|c:\\users\\asus\\desktop\\pp1\\negocio\\movimientonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60F7F828-1B73-4212-AB55-730DE2883221}|negocio\\negocio.csproj|solutionrelative:negocio\\movimientonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|C:\\Users\\ASUS\\Desktop\\PP1\\nuevomovimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221CDAC3-0345-427C-B9D5-8D5C279C330D}|PP1.csproj|solutionrelative:nuevomovimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60F7F828-1B73-4212-AB55-730DE2883221}|negocio\\negocio.csproj|c:\\users\\asus\\desktop\\pp1\\negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60F7F828-1B73-4212-AB55-730DE2883221}|negocio\\negocio.csproj|solutionrelative:negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\Login.aspx",
+              "RelativeDocumentMoniker": "Login.aspx",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\Login.aspx",
+              "RelativeToolTip": "Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-27T23:01:31.728Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-28T17:59:28.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Site1.Master",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\Site1.Master",
+              "RelativeDocumentMoniker": "Site1.Master",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\Site1.Master",
+              "RelativeToolTip": "Site1.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-28T17:56:53.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Movimientos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\Movimientos.aspx.cs",
+              "RelativeDocumentMoniker": "Movimientos.aspx.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\Movimientos.aspx.cs",
+              "RelativeToolTip": "Movimientos.aspx.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T00:06:52.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Movimientos.aspx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\Movimientos.aspx",
+              "RelativeDocumentMoniker": "Movimientos.aspx",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\Movimientos.aspx",
+              "RelativeToolTip": "Movimientos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-28T00:05:47.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MovimientoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\negocio\\MovimientoNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\MovimientoNegocio.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\negocio\\MovimientoNegocio.cs",
+              "RelativeToolTip": "negocio\\MovimientoNegocio.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAlwJQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T00:04:13.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\negocio\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\negocio\\CategoriaNegocio.cs",
+              "RelativeToolTip": "negocio\\CategoriaNegocio.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T23:06:09.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NuevoMovimiento.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\PP1\\NuevoMovimiento.aspx.cs",
+              "RelativeDocumentMoniker": "NuevoMovimiento.aspx.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\PP1\\NuevoMovimiento.aspx.cs",
+              "RelativeToolTip": "NuevoMovimiento.aspx.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAQwLsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T23:01:50.928Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
